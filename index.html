@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>www.ownshop.com</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgb(250,250,250);">
+ <nav class="navbar navbar-inverse  navbar-fixed-top" style="opacity: 0.95">
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-1" ></div>
+            <div class="col-md-1" >
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+                <a style="font-size: 28px;font-weight: bold;" class="navbar-brand" href="#" ><span style="color: violet;"> Ow</span><span style="color: yellow;">ns</span><span style="color: orange;">hop</span></a>
+              </div>
+            </div>
+            <div class="col-md-9"  class="collapse navbar-collapse" id="mainnavbar" >
+             <ul class="nav navbar-nav">
+             <!--    <li><a  style="color: red;" href="#">Grocery Shop</a></li>
+               <li><a href="#">Cosmetic Shop</a></li>
+               <li><a href="#">Food Shop</a></li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown" style="color: white;">
+               	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <span class="caret"></span></a>
+               
+               <ul class="dropdown-menu">
+               	  <li><a href="#">Feedback</a></li>
+                  <li><a href="#">Helpcenter</a></li>
+                  <li><a href="#">Selfserve Cancel</a></li>
+                  <li><a href="#">Message Us</a></li>
+               </ul>
+               </li>
+               <li style="color: white;"><a href="#">Get the app</a></li>
+               <li ><a href="#"><span style="border:1px solid red;padding: 8px;color: red;"> Sign in </span></a></li>
+               <button type="button" style="float: right;" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#myModal">Sign Up</button>
+            </ul>
+           </div>
+            
+      </nav>
+           <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        	    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="container-fluid">
+          	<div class="row">
+          		<div class="col-sm-6">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="modal-title">Create Your Account</h3>
+          <h6>Set up an account today and start receiving exclusive deals and discounts reserved only for you!<h6>
+      
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        	<div style="border:1px solid black;padding: 5px;text-align: center;">
+                    <img  class="img-responsive" src="1.png">
+                    <p style="margin-top: -20px;"> Sign in with Google</p>
+          	</div>
+          	<br/>
+          	<div style="border:1px solid black;padding: 5px;text-align: center;background-color: rgb(59,89,152);">
+                    <img  class="img-responsive" src="2.png">
+                    <p style="margin-top: -20px;color: white;"> Sign in with Facebook</p>
+          	</div>
+          		</div>
+          		<hr>
+          		<h6 style="text-align: center;color: grey;">or register with E-mail:</h6>
+          	
+          		  <form action="/action_page.php">
+          		  	  <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter First Name" name="Firstname">
+    </div>
+      <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter Last Name" name="Lastname">
+    </div>
+    <div class="form-group">
+    
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+     <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button style="margin-left: 70px;" type="submit" class="btn btn-success">Create Account</button>
+  </form>
+         </div>
+
+         <div class="col-md-6"style="background-image: url(1.jpg);padding-top: 170px;padding-bottom: 120px;">
+         	<img style="margin-left: 100px;" src="3.png">
+         	<h4 style="text-align: center;font-weight: bold;">Signed-in<br> Member Get Excess To:</h4>
+         	<br>
+         	<ul style="font-weight: bold;">
+         		<li>Thousands of Member-only deals</li>
+         		<br>
+         		<li>Lower prices</li>
+         		<br>
+         		<li>Faster Delivery</li>
+         		<br>
+         		<li>Amazing Offers</li>
+         		<br>
+         		<li>Upconing Deals</li>
+         	</ul>
+         </div>
+          	
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        	<h6 style="text-align: center;">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</h6>
+         <!--  <button style="align-items: center;" type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
+        </div>
+         	
+          </div>
+         </div>
+        </div>
+
+       <div class="container-fluid" style="background-image: url(2.jpg);height: 665px;">
+       	<div class="row">
+       		<div class="col-md-2"></div>
+       		<div class="col-md-8" style="background-color:rgba(0,0,0,0.7); text-align: center;padding-top: 70px;padding-bottom: 30px;margin-top: 90px;">
+       			<h3 style="font-family: Brush Script MT;color:white;font-size: 60px;">Welcome To<br><span style="font-family: Berlin Sans FB Demi">HAPPY</span><br><span style="font-family: Berlin Sans FB Demi">CUSTOMERS</span></h3>
+       			<br>
+       			<h4 style="font-family: Blackadder ITC;color:white;font-size: 30px;">Enter Your Location To Shop With Us</h4>
+       			<br>
+       				  <form action="/action_page.php">
+          		  	  <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter Your Location" name="Location">
+
+    </div>
+     <button style="font-family: Brush Script MT;font-size: 20px;background-color: green;border-radius: 48%;" type="submit" class="btn btn-success">Submit and Proceed</button>
+    </form>
+       		</div>
+       	</div>
+       </div>
+       <br>
+       <br>
+       <br>
+	
+
+        <!-- <div class="container">
+        	<div class="row">
+        	    <h3 style="color: red;font-family:  Bodoni MT Black;font-size: 30px;">These top Product are Just a click away!</h3>
+        	    <br>
+        	    
+        		<div class="col-md-3">
+        			<img class="img-responsive" src="4.png">
+        			<h4>Grocery Items</h4>
+        			<p>20 product Combo <span style="font-weight: bold;"> Avg Price $12</span></p>
+        		</div>
+        		<div class="col-md-3">
+        			<img class="img-responsive" src="4.png">
+        			<h4>Grocery Items</h4>
+        			<p>20 product Combo <span style="font-weight: bold;"> Avg Price $12</span></p>
+        		</div>
+        		<div class="col-md-3">
+        			<img class="img-responsive" src="4.png">
+               		<h4>Grocery Items</h4>
+        			<p>20 product Combo <span style="font-weight: bold;"> Avg Price $12</span></p> 			
+        		</div>
+        		<div class="col-md-3">
+        			<img class="img-responsive" src="4.png">
+            		<h4>Grocery Items</h4>
+        			<p>20 product Combo <span style="font-weight: bold;"> Avg Price $12</span></p>
+        		</div>
+        	</div>
+          </div>
+          <br>
+          <br>
+          <br> -->
+          <div class="container">
+            <div class="row">
+              <h3 style="color: red;font-family:  Bodoni MT Black;font-size: 30px;">These are our top shops!</h3>
+            </div>
+          </div>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="container col-lg-3 col-md-3 col-sm-6 col-6 mb-3">
+              <div class="card " class="hover" style="border:2px solid lightgrey; box-shadow: 0 0 13px;border-radius: 13px;">
+             
+                 <div id="slide" class="carousel slide " data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="1.jpg" alt="Los Angeles" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; height: 145px;">
+      </div>
+
+      <div class="item">
+        <img src="2.jpg" alt="Chicago" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;height: 145px;">
+      </div>
+    
+      <div class="item">
+        <img src="1.jpg" alt="New york" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;height: 145px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#slide" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#slide" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+                 <!-- <img src="2.jpg" class="img-fluid" alt="Avatar" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;"> -->
+                  
+                  <h4 style="font-size: 20px;color: green;text-align: center;"><b>Grocery items</b></h4> 
+                 <p style="text-align: center;" >20 Products combo <b style="color: orange;">Average price 20$.</b></p> 
+        
+                 </div>
+
+              </div>
+              <div class="container col-lg-3 col-md-3 col-sm-6 col-6 mb-3">
+                <div class="card " class="hover" style="border:2px solid lightgrey; box-shadow: 0 0 13px;border-radius: 13px;">
+                   <div id="myCarousel" class="carousel slide " data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="1.jpg" alt="Los Angeles" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; height: 145px;">
+      </div>
+
+      <div class="item">
+        <img src="2.jpg" alt="Chicago" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;height: 145px;">
+      </div>
+    
+      <div class="item">
+        <img src="1.jpg" alt="New york" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;height: 145px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+                <!--  <img src="2.jpg" class="img-fluid" alt="Avatar" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;"> -->
+                
+                  <h4 style="font-size: 20px;color: green;text-align: center;"><b>Grocery items</b></h4> 
+                 <p style="text-align: center;">20 Products combo <b style="color: orange;">Average price 20$.</b></p> 
+                
+                 </div>
+              </div>
+
+              <div class="container col-lg-3 col-md-3 col-sm-6 col-6 mb-3">
+                <div class="card " class="hover" style="border:2px solid lightgrey; box-shadow: 0 0 13px;border-radius: 13px;">
+                   <div id="slide2" class="carousel slide " data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="2.jpg" alt="Los Angeles" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; height: 145px;">
+      </div>
+
+      <div class="item">
+        <img src="2.jpg" alt="Chicago" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;height: 145px;">
+      </div>
+    
+      <div class="item">
+        <img src="1.jpg" alt="New york" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;height: 145px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#slide2" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#slide2" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+                 <!-- <img src="2.jpg" class="img-fluid" alt="Avatar" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;"> -->
+                
+                  <h4 style="font-size: 20px;color: green;text-align: center;"><b>Grocery items</b></h4> 
+                 <p style="text-align: center;">20 Products combo <b style="color: orange;">Average price 20$.</b></p> 
+                
+                 </div>
+              </div>
+
+              <div class="container col-lg-3 col-md-3 col-sm-6 col-6 mb-3">
+                <div class="card " class="hover" style="border:2px solid lightgrey; box-shadow: 0 0 13px;border-radius: 13px;">
+                   <div id="slide3" class="carousel slide " data-ride="carousel"  >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="1.jpg" alt="Los Angeles" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; height: 145px;">
+      </div>
+
+      <div class="item">
+        <img src="2.jpg" alt="Chicago" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;height: 145px;">
+      </div>
+    
+      <div class="item">
+        <img src="1.jpg" alt="New york" class="img-fluid" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;height: 145px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#slide3" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#slide3" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+                 <!-- <img src="2.jpg" class="img-fluid" alt="Avatar" style="width:100%;border-top-left-radius: 13px;border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px;"> -->
+                
+                  <h4 style="font-size: 20px;color: green;text-align: center;"><b>Grocery items</b></h4> 
+                 <p style="text-align: center;">20 Products combo <b style="color: orange;">Average price 20$.</b></p> 
+              
+                 </div>
+              </div> 
+
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="container">
+        	<div class="row">
+        		<div class="Col-md-6 col-sm-6">
+        			<h4 style="color: red;font-weight: bold;">Ownshop's Global Search</h4>
+        			<p>Ownshops’s Grocerys search allows users to compare Grocery item prices in just a few clicks from more than 400 Cities for 1.8 million+shops  in over 20 States. With 1.4 billion visits annually to our site, Byuers regularly use the Grocery comparison to compare deals in the same Location. Get information for weekend Offer on Ownshop quickly and easily. Delhi and its surrounding area are great for Our shops.</p>
+        		</div>
+        		<div class="Col-md-6 col-sm-6">
+        			<h4 style="color: red;font-weight: bold;">How to Buy</h4>
+        			<p>Ownshops’s Grocerys search allows users to compare Grocery item prices in just a few clicks from more than 400 Cities for 1.8 million+shops  in over 20 States. With 1.4 billion visits annually to our site, Byuers regularly use the Grocery comparison to compare deals in the same Location. Get information for weekend Offer on Ownshop quickly and easily. Delhi and its surrounding area are great for Our shops.</p>
+        		</div>
+        	</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <footer class="footer1" style="background-color:black;">
+<div class="container">
+
+<div class="row"><!-- row -->
+            
+                <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                          <li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Useful links</h1>
+                                
+                                <ul>
+                                  <li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+                                </ul>
+                    
+              </li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                
+                
+                <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+            
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                          <li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Useful links</h1>
+                                
+                                <ul>
+                  <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test Series Schedule</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Postal Coaching</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  PG Dr. Bhatia Books</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  UG Courses</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Satellite Education</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Study Centres</a></li>
+                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  State P.G. Mocks</a></li>
+                                    <li><a  href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Results</a></li>
+                                    
+                                </ul>
+                    
+              </li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                
+                
+                <div class="col-lg-3 col-md-3"><!-- widgets column left -->
+            
+                <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                          <li class="widget-container widget_nav_menu"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Major Cities</h1>
+                                
+                                <ul>
+
+
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>Delhi</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right"></i>Mumbai</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right"></i>Jhasi</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right"></i>Muradabad</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right"></i>Patna</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right"></i>Pune</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>Amritsar</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right"></i>Chandigarh</a></li>
+
+                                </ul>
+                    
+              </li>
+                            
+                        </ul>
+                         
+                      
+                </div><!-- widgets column left end -->
+                
+                
+                <div class="col-lg-3 col-md-3"><!-- widgets column center -->
+                
+                   
+                    
+                        <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        
+                          <li class="widget-container widget_recent_news"><!-- widgets list -->
+                    
+                                <h1 class="title-widget">Contact Detail </h1>
+                                
+                                <div class="footerp"> 
+                                
+                                <h2 class="title-median">Ownshop Pvt. Ltd.</h2>
+                                <p><b>Email id:</b> <a href="mailto:info@webenlance.com">srjrnw3@gmail.com</a></p>
+                                <p><b>Helpline Numbers </b>
+
+    <b style="color:#ffc106;">(8AM to 10PM):</b>  8130890090, +91-8130190010  </p>
+    
+    <p><b>Corp Office / Postal Address</b></p>
+    <p><b>Phone Numbers : </b>7042827160, </p>
+    <p> 011-27568832, 9868387223</p>
+                                </div>
+                                
+                                <div class="social-icons">
+                                
+                                  <ul class="nomargin">
+                                    
+                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
+              <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social-tw" id="social"></i></a>
+              <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a>
+              <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
+                                    
+                                    </ul>
+                                </div>
+                        </li>
+                          </ul>
+                       </div>
+                </div>
+</div>
+</footer>
+</body>
+</html>
