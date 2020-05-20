@@ -1,0 +1,633 @@
+<DOCTYPE! html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grocery shop</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="searchbar.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	                                             <!-- <nav> -->
+                        <!-- <nav> -->
+
+<!-- 
+<div id="mySidenav" class="sidenav fixed-top">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Grocery Shop</a>
+  <a href="#">Cosmetic Shop</a>
+  <a href="#">Stationary Shop</a>
+  <a href="#">Medical Shop</a>
+</div> -->
+
+<div id="main">
+       <!--  <div class="col-md-1">
+          <span class="fixed-top" style="font-size:24px;cursor:pointer; color: brown;padding-top: 50px;" onclick="openNav()">&#9776;Category</span>
+        </div> -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:indigo;margin-top: -10px;opacity: 0.80;" >
+        <div class="col-md-1"></div>
+          <a style="font-size: 28px;font-weight: bold;" class="navbar-brand" href="#" ><span style="color: violet;"> Ow</span><span style="color: yellow;">ns</span><span style="color: orange;">hop</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+       
+    
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="padding-top: 8px;">
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+        <a style="color: white" class="nav-link" href="#">
+
+          <div id="wrap">
+        <form action="" autocomplete="on">
+        <input id="search" name="search" type="text" placeholder="Looking For Something ?"><input id="search_submit" value="Rechercher" type="submit">
+        </form>
+      </div>
+
+
+          <!-- <span class="sr-only">(current)</span> --></a>
+      </li> 
+
+      <li class="nav-item active">
+        <a style="color: white" class="nav-link" href="#">Get the app <!-- <span class="sr-only">(current)</span> --></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Support
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Feedback</a>
+          <a class="dropdown-item" href="#">Helpcenter</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Message Us</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <!-- <a href="#">Disabled</a> -->
+        <a class="nav-link disabled"  href="#"><span style="border:1px solid red;padding: 8px;color: red;"> Sign in </span></a>
+      </li>
+          <button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#myModal">Sign Up</button>
+    </ul>
+    
+  </div>
+ 
+
+
+</nav>
+
+   
+       <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: red;padding-left: 50px;">Create Your Account</h5>
+          
+      
+        </div>
+        <h6 style="font-size: 14px;">Set up an account today and start receiving exclusive deals and discounts reserved only for you!<h6>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div style="border:1px solid black;padding-top: 10px;padding-left: 60px;">
+                    <img  class="img-fluid" src="google.png">
+                    <p style="margin-top: -20px;margin-left: -50px; text-align: center;"> Sign in with Google</p>
+            </div>
+            <br/>
+            <div style="border:1px solid black;padding-top: 10px;padding-left: 60px;background-color: rgb(59,89,152);">
+                    <img  class="img-fluid" src="2.png">
+                    <p style="margin-top: -20px;margin-left: -50px;color: white;text-align: center;"> Sign in with Facebook</p>
+            </div>
+              </div>
+              <hr>
+              <h6 style="text-align: center;color: grey;">or register with E-mail:</h6>
+            
+                <form action="/action_page.php">
+                    <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter First Name" name="Firstname">
+    </div>
+      <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter Last Name" name="Lastname">
+    </div>
+    <div class="form-group">
+    
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+     <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button style="margin-left: 110px;" type="submit" class="btn btn-success">Create Account</button>
+  </form>
+         </div>
+
+         <div class="col-md-6"style="background-image: url(11.jpg);padding-top: 120px;">
+          <img style="margin-left: 150px;" src="3.png">
+          <h4 style="text-align: center;font-weight: bold;">Signed-in<br> Member Get Excess To:</h4>
+          <br>
+          <ul style="font-weight: bold;">
+            <li>Thousands of Member-only deals</li>
+            <br>
+            <li>Lower prices</li>
+            <br>
+            <li>Faster Delivery</li>
+            <br>
+            <li>Amazing Offers</li>
+            <br>
+            <li>Upconing Deals</li>
+          </ul>
+         </div>
+            
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer" style="text-align: center;">
+          <h6 style=" font-size: 18px;">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</h6>
+          <button style="align-items: center;" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+          
+          </div>
+         </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	                                                 <!-- <1st row> -->
+	                                                 <!-- <1st card> -->
+  <h2 class="text-center font-weight-bold" style="color:green ">Our Vegetables</h2>
+  <div class="container">
+  	<div class="row">
+  		  <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="onion.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Onions</h4>
+            <p><b><span style="font-size: 20px;">Rs.30 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+  		                                                    <!-- <2nd card> -->
+  		 <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="patoto.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+  				
+
+  				<div class="card-body">
+  					<h4 class="text-center font-weight-bold">Potatoes</h4>
+  					<p><b><span style="font-size: 20px;">Rs.30 / kg</span></b><br>
+  					Hlo I am there for shopping</p>
+  				</div>
+  			</div>
+  		</div>
+  		                                                    <!-- <3rd card> -->
+  		 <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="eggplant.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Eggplant</h4>
+            <p><b><span style="font-size: 20px;">Rs.40 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+  		                                                 <!-- <4th card> -->
+  		 <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="cabage.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+
+  				<div class="card-body">
+  					<h4 class="text-center font-weight-bold">Cabbage</h4>
+  					<p><b><span style="font-size: 20px;">Rs.35 / kg</span></b><br>
+  					Hlo I am there for shopping</p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+                                                     <!-- <2nd row> -->
+ 	                                                 <!-- <1st card> -->
+                                                  
+    <div class="container">
+  	<div class="row">
+   <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="raddish.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Raddish</h4>
+            <p><b><span style="font-size: 20px;">Rs.20 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+  		                                                    <!-- <2nd card> -->
+  	 <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="green.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+  				
+
+  				<div class="card-body">
+  					<h4 class="text-center font-weight-bold">Green Chilly</h4>
+  					<p><b><span style="font-size: 20px;">Rs.30 / pc</span></b><br>
+  					Hlo I am there for shopping</p>
+  				</div>
+  			</div>
+  		</div>
+  		                                                    <!-- <3rd card> -->
+  		  <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="tomato.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Tomatoes</h4>
+            <p><b><span style="font-size: 20px;">Rs.40 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+  		                                                 <!-- <4th card> -->
+  		   <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="cauli.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Cauliflower</h4>
+            <p><b><span style="font-size: 20px;">Rs.20 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+  	</div>
+  </div>  
+                                                  <!-- <3rd row> -->
+   	                                                 <!-- <1st card> -->
+                                                
+    <div class="container">
+    <div class="row">
+      <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="bell.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Capsicum</h4>
+            <p><b><span style="font-size: 20px;">Rs.50 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+                                                          <!-- <2nd card> -->
+       <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="garlic.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Garlic</h4>
+            <p><b><span style="font-size: 20px;">Rs.150 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+                                                          <!-- <3rd card> -->
+        <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="ginger.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Ginger</h4>
+            <p><b><span style="font-size: 20px;">Rs.80 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+                                                       <!-- <4th card> -->
+       <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="brocli.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Broccoli</h4>
+            <p><b><span style="font-size: 20px;">Rs.80 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+                                                     <!-- <4th row> -->
+ 	                                                 <!-- <1st card> -->
+                                                  
+    <div class="container">
+    <div class="row">
+      <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="carrot.png" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Carrot</h4>
+            <p><b><span style="font-size: 20px;">Rs.35 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+                                                          <!-- <2nd card> -->
+     <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="pumpkin.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Pumpkin</h4>
+            <p><b><span style="font-size: 20px;">Rs.20 / pc</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+                                                          <!-- <3rd card> -->
+         <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="pea.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Peas</h4>
+            <p><b><span style="font-size: 20px;">Rs.50 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+                                                       <!-- <4th card> -->
+        <div class="container col-lg-3 col-md-6 col-sm-6 col-6 mb-4">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="lemon.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Lemon</h4>
+            <p><b><span style="font-size: 20px;">Rs.80 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="container">
+    <div class="row">
+      <div class="conatainer col-lg-3 col-md-3 col-sm-6 col-6">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="spring onion.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Onion Springs</h4>
+            <p><b><span style="font-size: 20px;">Rs.35 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+      <div class="conatainer col-lg-3 col-md-3 col-sm-6 col-6">
+        <div class="card m"  style="width: 100%; border-top-right-radius: 50px;border-bottom-left-radius: 50px; box-shadow: 0 0 13px;border:none;">
+          <div class="card-img-top">
+            <img src="lafdy.jpg" class="img-fluid" style="height: 200px;width:100%; border-top-right-radius: 50px; box-shadow: 0 0 13px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;">
+          </div>
+          
+
+          <div class="card-body">
+            <h4 class="text-center font-weight-bold">Lady finger</h4>
+            <p><b><span style="font-size: 20px;">Rs.50 / kg</span></b><br>
+            Hlo I am there for shopping</p>
+          </div>
+        </div>
+      </div>
+      <div class="conatainer col-lg-3 col-md-3 col-sm-6 col-6"></div>
+      <div class="conatainer col-lg-3 col-md-3 col-sm-6 col-6"></div>
+    </div>
+  </div>
+                                            <!-- <5th row> -->
+  	                                                 <!-- <1st card> -->
+
+
+                                    <!-- <footer>                                     	 -->
+ 
+<!-- Footer -->
+<footer class="page-footer font-small indigo" style="margin-top: 55px;" >
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center" style="background-color:indigo;opacity: 0.85;">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">imp Links</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">About US</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Contact Us</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Success story</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Services</a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Ownshop</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">Jobs</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Term & condition</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Privacy Policy</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Our parteners</a>
+          </li>
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Mazor Cities</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">Delhi</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Patna</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Amritsar</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Mumbai</a>
+          </li>
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h3 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Contact Detail</h3>
+
+
+                                
+                                
+                                <h5 style="color: black;" class="title-median">Ownshop Pvt. Ltd.</h5>
+                                <p><b style="color: black;">Email id:</b> <a style="color: black;" href="mailto:info@webenlance.com">srjrnw3@gmail.com</a></p>
+                               <!--  <p><b>Helpline Numbers </b> -->
+
+    <b style="color:#ffc106;">(8AM to 10PM):</b><p style="color: black;">  8130890090, +91-8130190010  </p>
+    
+    <!-- <p><b>Corp Office / Postal Address</b></p> -->
+    <!-- <p><b>Phone Numbers : </b>7042827160, </p>
+    <p> 011-27568832, 9868387223</p> -->
+                                
+
+       <!--  <ul class="list-unstyled">
+          <li>
+            <a style="color: white;" href="#!">Link 1</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 2</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 3</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 4</a>
+          </li>
+        </ul> -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color:indigo;color: black;">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" style="color: white;">Ownshop.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>                                              	
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>

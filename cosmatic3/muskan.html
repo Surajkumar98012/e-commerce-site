@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="searchbar.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <style>
+  body{
+    position: relative;
+   background:url(background2.jpg) no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  
+  width:100%;
+  height:100%;
+  }
+  #section1 {
+    padding-top:50px;
+  }
+   #section1 img{
+    box-shadow: 2px 2px 2px 2px;
+    margin-top: 17px;
+  }
+   .side-menu{
+  
+      float: left;
+      padding-top: 52px;
+      z-index: 2;
+    }
+    .side-menu ul{
+      margin-left: 10px;
+    }
+     .side-menu ul li{
+      font-weight: bold;
+      cursor: pointer;
+     }
+     .side-menu ul li:hover
+     {
+      color: black;
+     }
+     .side-menu ul li:hover ul
+     {
+      display: contents;
+     }
+     .featured-categories
+     {
+      margin:50px 0;
+     }
+     .featured-categories img{
+      width: 100%;
+     /* padding: 20px 0;*/
+      transition: 1s;
+      cursor: pointer;
+     }
+      .featured-categories img:hover
+      {
+        transform: scale(1.1);
+      }
+      .title-box{
+        background-color: black;
+        color: #fff;
+        width: 170px;
+        padding: 5px 10px;
+        height: 70px;
+        margin-bottom: 10px;
+        display: flex;
+      }
+      .title-box h2
+      {
+        font-size: 24px;
+
+      }
+      .title-box:after
+      {
+        content:'';
+        border-top: 40px solid orange;
+        border-right: 50px solid transparent;
+        position: absolute;
+        display: flex;
+        margin-top: -4px;
+        margin-left: 170px;
+
+      }
+      .overlay-right
+      {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 10px;
+        margin-left: 0;
+        width: 20px;
+
+      }
+      .overlay-right .fa
+      {
+        cursor: pointer;
+        background-color: yellow;
+        color: #000;
+        height: 40px;
+        width: 50px;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+      }
+      .overlay-right .btn-secondary
+      {
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+      }
+      .product-top:hover .overlay-right
+      {
+        opacity: 1;
+        margin-left: 20px;
+        transition: 0.5s;
+        
+      }
+      .product-bottom .fa
+      {
+        color: gold;
+               font-size: 10px;
+
+      }
+    
+        #section0{
+
+  width: 100%;
+  
+  }
+   .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    height: 650px;
+  }
+
+   .yo{
+font-family: 'Clicker Script', cursive;
+      text-shadow: 3px 3px 4px white;
+      
+
+    }
+    .hy{
+      background-color: black;
+    }
+   
+  
+    .my{
+      background-color: black;
+    }
+    div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.box{
+  border:3px 3px dotted black;
+}
+.card{
+      box-shadow: 2px 2px 5px #660099;
+        width: 600px;
+        height: 200px;
+        padding: 20px 20px 20px 20px;
+        color: white;
+        background-color:  black;
+        transition: transform ;
+
+        
+    }
+.card:hover{
+   transform: scale(1.2);
+ }
+ footer{
+  background-color: #696969;
+  padding: 30px 30px 30px 30px;
+  margin:  0px 0px 0px 0px;
+  color: white;
+ }
+
+  
+#section2 {
+      
+ 
+  width: 100%;
+  height: 900px;
+  }
+   #section2 img{
+    box-shadow: 2px 2px 2px 2px;
+    margin-top: 17px;
+  }
+   #section2 {
+    padding-top:50px;
+  }
+
+  #section3 {
+      
+ 
+  width: 100%;
+  height: 900px;
+  }
+   #section3 img{
+    box-shadow: 2px 2px 2px 2px;
+    margin-top: 17px;
+  }
+   #section3 {
+    padding-top:50px;
+  }
+  #a{
+    width: 100%;
+  height: 900px; 
+  background-color: yellow;
+  }
+  em{
+    text-shadow: 2px 3px 3px red;
+  }
+
+     
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:rgba(255,255,255,0.3);margin-top: -10px;" >
+        <div class="col-md-1"></div>
+          <a style="font-size: 28px;font-family: curlz MT; font-weight: bolder;color: indigo;" class="navbar-brand" href="#" >OWNSHOP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="navbar-toggler-icon"></div>
+  </button>
+    
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="padding-top: 8px;">
+    <ul class="navbar-nav">
+
+         
+
+
+         <li class="nav-item active">
+        <a style="color: white" class="nav-link" href="#">
+
+          <div id="wrap">
+        <form action="" autocomplete="on">
+        <input id="search" name="search" type="text" placeholder="Looking For Something ?"><input id="search_submit" value="Rechercher" type="submit">
+        </form>
+      </div>
+
+
+          <!-- <span class="sr-only">(current)</span> --></a>
+      </li> 
+
+
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Get the app <!-- <span class="sr-only">(current)</span> --></a>
+      </li>
+
+
+     
+<div class="dropdown">
+  <button  class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Support
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Feedback</a>
+    <a class="dropdown-item" href="#">Helpcenter</a>
+    <a class="dropdown-item" href="#">Message Us</a>
+  </div>
+</div>
+
+
+  
+      <li class="nav-item">
+        <!-- <a href="#">Disabled</a> -->
+        <a class="nav-link disabled"  href="#"><span style="border:1px solid red;padding: 8px;color: red;"> Sign in </span></a>
+      </li>
+          <button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#myModal">Sign Up</button>
+    </ul>
+    
+  </div>
+ 
+
+
+</nav>
+
+   
+       <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: red;padding-left: 50px;">Create Your Account</h5>
+          
+      
+        </div>
+        <h6 style="font-size: 14px;">Set up an account today and start receiving exclusive deals and discounts reserved only for you!<h6>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div style="border:1px solid black;padding-top: 10px;padding-left: 60px;">
+                    <img  class="img-fluid" src="1.png">
+                    <p style="margin-top: -20px;margin-left: -50px; text-align: center;"> Sign in with Google</p>
+            </div>
+            <br/>
+            <div style="border:1px solid black;padding-top: 10px;padding-left: 60px;background-color: rgb(59,89,152);">
+                    <img  class="img-fluid" src="2.png">
+                    <p style="margin-top: -20px;margin-left: -50px;color: white;text-align: center;"> Sign in with Facebook</p>
+            </div>
+              </div>
+              <hr>
+              <h6 style="text-align: center;color: grey;">or register with E-mail:</h6>
+            
+                <form action="/action_page.php">
+                    <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter First Name" name="Firstname">
+    </div>
+      <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter Last Name" name="Lastname">
+    </div>
+    <div class="form-group">
+    
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+     <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button style="margin-left: 110px;" type="submit" class="btn btn-success">Create Account</button>
+  </form>
+         </div>
+
+         <div class="col-md-6"style="background-image: url(11.jpg);padding-top: 120px;">
+          <img style="margin-left: 150px;" src="3.png">
+          <h4 style="text-align: center;font-weight: bold;">Signed-in<br> Member Get Excess To:</h4>
+          <br>
+          <ul style="font-weight: bold;">
+            <li>Thousands of Member-only deals</li>
+            <br>
+            <li>Lower prices</li>
+            <br>
+            <li>Faster Delivery</li>
+            <br>
+            <li>Amazing Offers</li>
+            <br>
+            <li>Upconing Deals</li>
+          </ul>
+         </div>
+            
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer" style="text-align: center;">
+          <h6 style=" font-size: 18px;">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</h6>
+          <button style="align-items: center;" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+          
+          </div>
+         </div>
+        </div>
+<br>
+<br>
+
+<div id="section0" >
+	<br>
+  <div class="container-fluid hy">
+  <br>
+  <br><h1 class="yo text-center " style="color:#ff99CC " ><i class='fas fa-cannabis' style='font-size:42px'></i><b>BEAUTY HUB</b><i class='fas fa-cannabis' style='font-size:42px'></i></h1>
+  <br>
+  <marquee class="bg-warning"> GET YOUR ESSENTIALS ALL HERE</marquee>
+<br>
+<br>
+<br></div>
+  <br>
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="add3.jpg">
+        <div class="carousel-caption">
+  
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="a.jpg">
+        <div class="carousel-caption">
+         
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="musu.jpg">
+        <div class="carousel-caption">
+  
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="add1.jpg" >
+        <div class="carousel-caption">
+        
+        </div>
+      </div>
+      <div class="item">
+        <img src="add2.jpg" >
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+  
+  <div class="item">
+        <img src="beauty.jpg">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+
+   
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+<em><h1 class="text-center text-gray-dark"><u><b>I LOVE THE CONFIDENCE THAT MAKE UP GIVE ME</b></u></h1></em>
+<br>
+<br>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="polaroid">
+  <img src="pic2.jpg" height="250" style="width:100%"></div></div>
+   <div class="col-sm-3">
+    <div class="polaroid">
+  <img src="beauty2.jpg" style="width:100%"></div></div>
+   <div class="col-sm-3">
+    <div class="polaroid">
+  <img src="girl.jpg" height="250"  style="width:100%"></div></div>
+   <div class="col-sm-3">
+    <div class="polaroid">
+  <img src="make4.jpg"  style="width:100%"></div></div>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<div class="container justify-content-center">
+        <center>
+          <div class="row justify-content-center">
+          <div class="card">
+            <div class="card-body"><p class="text-warning text-center">Lipstick is really magical. It holds more than a waxy bit of color – it holds the promise of a brilliant smile, a brilliant day, both literally and figuratively</p>
+              <br>
+              <p class="text-warning text-center">Makeup is not a mask that covers up your beauty; it’s a weapon that helps you express who you are from the inside.</p>
+              <button type="button" class="btn btn-warning"><i class='fas fa-hand-point-right' style='font-size:36px;color: yellow'></i>LET SHOP WITH US</button>
+            </div>
+          </div>
+          <br><br>
+        </div>
+        </center>
+      </div>
+
+ 
+</div>
+
+
+
+<div id="section1">
+<section class="header">
+  <div class="side-menu">
+<ul>
+  <h2><a href="musu1.html">COSMETICS</a></h2>
+  <li>FACE</li>
+    <ul>
+      <li>Blush</li>
+      <li>Compacts</li>
+      <li>Foundations</li>
+      <li>Powders</li>
+      <li>Bronzers</li>
+  </ul>
+</li>
+
+<li>EYES</li>
+ <ul>
+      <li>Brows</li>
+      <li>Eyeliners</li>
+      <li>Eyeshadows</li>
+      <li>Mascara</li>
+      
+  </ul>
+</li>
+
+<li>LIPS</li>
+ <ul>
+      <li>Lip Gloss</li>
+      
+      <li>Lipstick</li>
+      
+  </ul>
+</li>
+<li>Nails</li>
+ <ul>
+      <li>Nail Polish</li>
+      
+  </ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+
+<!-- <div id="section1"> -->
+<img src="shop3.jpg" style="margin-left: 70px" width="1100" height="600">
+
+<section class="featured-categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="makeup1.jpg" height="300" width="300">
+    </div>
+     <div class="col-md-4">
+        <img src="nyka1.png"  height="300" width="300">
+    </div>
+    <div class="col-md-4">
+        <img src="makeup3.jpg"  height="300" width="300">
+    </div>
+</div>
+</div>
+
+</section>
+</div>
+
+<section class="on-sale">
+  <div class="container">
+    <div class="title-box">
+      <h2>On Sale</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="product-top">
+          <img src="lipstick.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <h3>LIPSTICK</h3>
+                <h5>$10.00</h5>
+                </div>
+      </div>
+    </div>
+        
+       <div class="col-md-3">
+        <div class="product-top">
+          <img src="compact.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                
+                <h3>COMPACT POWDER</h3>
+                <h5>$7.00</h5>
+              </div>
+
+
+        </div>
+      </div>
+
+        <div class="col-md-3">
+        <div class="product-top">
+          <img src="liquid foundation.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               
+                <h3>FOUNDATION</h3>
+                <h5>$10.00</h5>
+              </div>
+
+
+        </div>
+      </div>
+
+        <div class="col-md-3">
+        <div class="product-top">
+          <img src="concealer.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <h3>CONCEALER</h3>
+                <h5>$8.00</h5>
+              </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+</div>
+
+
+<div id="section2">
+  <section class="header">
+  <div class="side-menu">
+<ul>
+  <h2><a href="musu3.html">FRAGRANCE</a></h2>
+  <li>Floral</li>
+
+<li>Fruity</li>
+
+<li>Breeze</li>
+<li>Lush</li>
+</ul>
+</div>
+</section>
+
+
+
+<img src="perfumeimage.jpg" style="margin-left: 70px" width="1100" height="600">
+<br>
+<section class="featured-categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="floral-perfume.jpg" height="300" width="300">
+    </div>
+     <div class="col-md-4">
+        <img src="perfume.jpg"  height="300" width="300">
+    </div>
+    <div class="col-md-4">
+        <img src="perfume0.jpg"  height="300" width="300">
+    </div>
+</div>
+</div>
+
+</section>
+</div>
+<br><br>
+<br>
+<br>
+<section class="on-sale">
+	<br>
+	<br>
+  <div class="container">
+    <div class="title-box">
+    	<br>
+    	<br>
+      <h2>On Sale</h2>
+      <br>
+      <br>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="product-top">
+          <img src="perfume4.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <h3>COCO CHANNEL PERFUME</h3>
+                <h5>$20.00</h5>
+                </div>
+      </div>
+    </div>
+        
+       <div class="col-md-3">
+        <div class="product-top">
+          <img src="perfume5.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                
+                <h3>ANNICK GOUTAL DEO</h3>
+                <h5>$15.00</h5>
+              </div>
+
+
+        </div>
+      </div>
+
+        <div class="col-md-3">
+        <div class="product-top">
+          <img src="perfume1.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               
+                <h3>DEVIDOFF PERFUME</h3>
+                <h5>$12.00</h5>
+              </div>
+
+
+        </div>
+      </div>
+
+        <div class="col-md-3">
+        <div class="product-top">
+          <img src="perfume2.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <h3>BODY PERFUME</h3>
+                <h5>$25.00</h5>
+              </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+</div>
+
+
+<div id="section3">
+  <section class="header">
+  <div class="side-menu">
+<ul>
+  <h2><a href="musu2.html">SKINCARE</a></h2>
+  <li>Cleanser Toners</li>
+
+<li>Eye Care</li>
+
+<li>Hand & Body</li>
+<li>Moisturizers</li>
+</ul>
+</div>
+</section>
+
+
+
+<img src="beauty1.jpg" style="margin-left: 70px" width="1100" height="600">
+<br>
+<section class="featured-categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="skin1.jpg" height="300" width="300">
+    </div>
+     <div class="col-md-4">
+        <img src="skin.png"  height="300" width="300">
+    </div>
+    <div class="col-md-4">
+        <img src="skin3.jpg"  height="300" width="300">
+    </div>
+</div>
+</div>
+
+</section>
+</div>
+<br><br>
+<section class="on-sale">
+  <div class="container">
+    <div class="title-box">
+<br>
+<br>
+
+      <h2>On Sale</h2>
+      <br>
+      <br>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="product-top">
+          <img src="cream11.jpeg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <h3>OLAY MICRO-SCULPTING CREAM</h3>
+                <h5>$10.00</h5>
+                </div>
+      </div>
+    </div>
+        
+       <div class="col-md-3">
+        <div class="product-top">
+          <img src="cream12.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                
+                <h3>BREND CREAM & LOTION</h3>
+                <h5>$7.00</h5>
+              </div>
+
+
+        </div>
+      </div>
+
+        <div class="col-md-3">
+        <div class="product-top">
+          <img src="hand.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               
+                <h3>DETTOL HANDWASH</h3>
+                <h5>$10.00</h5>
+              </div>
+
+
+        </div>
+      </div>
+
+        <div class="col-md-3">
+        <div class="product-top">
+          <img src="face12.jpg" height="300" width="270">
+          <div class="overlay-right">
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <h3>ALOE VERA FACEWASH</h3>
+                <h5>$8.00</h5>
+              </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+</div>
+     <footer class="page-footer font-small indigo" style="margin-top: 55px;" >
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center" style="background-color:rgba(0,0,0,0.5);">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">imp Links</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">About US</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Contact Us</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Success story</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Services</a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Ownshop</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">Jobs</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Term & condition</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Privacy Policy</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Our parteners</a>
+          </li>
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Mazor Cities</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">Delhi</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Patna</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Amritsar</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Mumbai</a>
+          </li>
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h3 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Contact Detail</h3>
+
+
+                                
+                                
+                                <h5 style="color: black;" class="title-median">Ownshop Pvt. Ltd.</h5>
+                                <p><b style="color: black;">Email id:</b> <a style="color: black;" href="mailto:info@webenlance.com">srjrnw3@gmail.com</a></p>
+                               <!--  <p><b>Helpline Numbers </b> -->
+
+    <b style="color:#ffc106;">(8AM to 10PM):</b><p style="color: black;">  8130890090, +91-8130190010  </p>
+    
+    <!-- <p><b>Corp Office / Postal Address</b></p> -->
+    <!-- <p><b>Phone Numbers : </b>7042827160, </p>
+    <p> 011-27568832, 9868387223</p> -->
+                                
+
+       <!--  <ul class="list-unstyled">
+          <li>
+            <a style="color: white;" href="#!">Link 1</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 2</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 3</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 4</a>
+          </li>
+        </ul> -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color:rgba(0,0,0,0.7);color: black;">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" style="color: white;">Ownshop.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+</body>
+</html>
